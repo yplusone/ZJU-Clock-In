@@ -4,7 +4,7 @@ on:
   push:
     branches: 
       - master
-  watch:
+#  watch:
 #    types: started
   schedule:
     - cron: 0 */8 * * *
