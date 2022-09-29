@@ -5,14 +5,14 @@ on:
     branches: 
       - master
   watch:
-    types: started
+#    types: started
   schedule:
     - cron: 0 */8 * * *
 
 jobs:
   ClockIn:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+#    if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
         uses: actions/checkout@master
